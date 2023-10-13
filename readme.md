@@ -6,7 +6,12 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshot](#screenshot) 
+    -[desktop](#desktop)
+    -[desktop-error](#desktop---error)
+    -[desktop-resolve](#desktop---resolve)
+    -[movil](#movil)
+    -[movile - error](#movil---error)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [installation](#installation)
@@ -48,7 +53,7 @@ Users should be able to:
 
   <image src="src\assets\images\movile-mockup.png" alt="age calculator movil">
   
-#### movil
+#### movil - error
 
   <image src="src\assets\images\movile-mockup-error.png" alt="age calculator movil error">
 
