@@ -14,6 +14,8 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 ## Overview
 
+git
+
 ### The challenge
 
 Users should be able to:
@@ -30,7 +32,25 @@ Users should be able to:
 
 ### Screenshot
 
-  <image src="src\assets\images\desktop-mockup-error.png" alt="age calculator-desktop version">
+#### desktop
+
+  <image src="src\assets\images\desktop-mockup.png" alt="age calculator desktop">
+
+#### desktop - error
+
+  <image src="src\assets\images\desktop-mockup-error.png" alt="desktop error">
+
+#### desktop - resolve
+
+  <image src="src\assets\images\desktop-mockup-resolve.png" alt="age calculator resolve">
+
+#### movil
+
+  <image src="src\assets\images\movile-mockup.png" alt="age calculator movil">
+  
+#### movil
+
+  <image src="src\assets\images\movile-mockup-error.png" alt="age calculator movil error">
 
 ## My process
 
