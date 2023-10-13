@@ -6,20 +6,18 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot) 
-    -[desktop](#desktop)
-    -[desktop-error](#desktop---error)
-    -[desktop-resolve](#desktop---resolve)
-    -[movil](#movil)
-    -[movile - error](#movil---error)
+  - [Screenshot](#screenshot)
+    - [desktop](#desktop)
+    - [desktop-error](#desktop---error)
+    - [desktop-resolve](#desktop---resolve)
+    - [movil](#movil)
+    - [movile - error](#movil---error)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [installation](#installation)
 - [Author](#author)
 
 ## Overview
-
-git
 
 ### The challenge
 
@@ -70,7 +68,21 @@ Users should be able to:
 
 ### installation
 
--
+##### Open age calculator
+
+`cd  ./age-calculator`
+
+##### install dependencies
+
+`npm install `
+
+##### start proyect
+
+`npm run dev`
+
+##### build production
+
+`npm run build`
 
 ## Author
 
