@@ -7,9 +7,7 @@
   --smokeygrey: hsl(0, 1%, 44%);
   --offblack: hsl(0, 0%, 8%);
 }
-html {
-  min-height: 300px;
-}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +22,7 @@ html {
   background-color: var(--offwhite);
   display: grid;
   place-content: center;
-  padding:  1rem;
+  padding: 1rem;
 }
 
 .main {
@@ -50,8 +48,8 @@ html {
 .form__input-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
   height: 7rem;
+  gap: 0.5rem;
 }
 
 .form__lbl {
@@ -67,14 +65,15 @@ html {
 }
 
 .form__imput {
+  height: 4rem;
+  max-width: 8rem;
   width: 100%;
   padding: 1rem;
   font-size: 1.5rem;
   font-weight: 700;
-  height: 4rem;
-  max-width: 8rem;
   border-radius: 0.5rem;
   border: 1px solid var(--lightgrey);
+  outline: none;
 }
 
 .form__imput:focus {
@@ -86,7 +85,7 @@ html {
 }
 
 .errorMessage {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--lightred);
   font-weight: 400;
 }
@@ -138,6 +137,9 @@ html {
   .form__button {
     width: 5rem;
     height: 5rem;
+  }
+  .errorMessage {
+    font-size: 0.7rem;
   }
 }
 

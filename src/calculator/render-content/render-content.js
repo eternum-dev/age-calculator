@@ -5,9 +5,9 @@ import { errorDanger } from '../error/errorDanger';
 import './render-content.css';
 
 
-let DD = '- -',
-    MM = '- -',
-    YYYY = '- -';
+let DD = '--',
+    MM = '--',
+    YYYY = '--';
 
 /**
  * 
@@ -32,7 +32,7 @@ export const renderContent = (element) => {
 
     const form = document.querySelector('.form');
     const validator = (inputDD, inputMM, inputYYYY) => {
-        
+
         // usando los inputs se obtiene la cantidad días máximos del mes y año ingresado
         const maxDayMonth = (new Date(inputYYYY.value, inputMM.value, 0)).getDate();
         //año actual
@@ -46,17 +46,14 @@ export const renderContent = (element) => {
             flag = false
             return flag;
         }
-
-        if (inputDD.value < 0 || inputDD.value > maxDayMonth) {
+        if (inputDD.value < 0 || inputDD.value > maxDayMonth || inputDD.value > 31) {
             errorDanger(inputDD, `Must be a valid day`);
             flag = false;
         }
-
         if (inputMM.value < 1 || inputMM.value > 12) {
             errorDanger(inputMM, 'Must be a valid Month')
             flag = false;
         }
-
         if (inputYYYY.value < 1 || inputYYYY.value >= currentYYYY) {
             errorDanger(inputYYYY, 'Must be in the past')
             flag = false;
@@ -69,17 +66,13 @@ export const renderContent = (element) => {
         event.preventDefault();
 
         const { inputDD, inputMM, inputYYYY } = getInputBirthDate();
-
-
-
-
-
         const isValid = validator(inputDD, inputMM, inputYYYY);
 
         if (!isValid) {
-            DD = '- -';
-            MM = '- -';
-            YYYY = '- -';
+            DD = '--';
+            MM = '--';
+            YYYY = '--';
+            
             renderContent(element);
             return;
         }

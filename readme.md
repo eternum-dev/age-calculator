@@ -1,6 +1,6 @@
-#Age calculator app solution
+# Age calculator app solution
 
-This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -9,6 +9,7 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
   - [Screenshot](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [installation](#installation)
 - [Author](#author)
 
 ## Overview
@@ -27,13 +28,14 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-
 ### Screenshot
-  
+
+  <image src="src\assets\images\desktop-mockup-error.png" alt="age calculator-desktop version">
 
 ## My process
 
 ### Built with
+
 - JavaScript
 - Vite
 - Semantic HTML5 markup
@@ -41,14 +43,13 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 
+### installation
 
-### installation 
-
-
-
+-
 
 ## Author
-### Alejandro Thon
-- Linkedin - [Linkedin - Alejandro Thon](www.linkedin.com/in/alejandrothon/)
-- Email -  alejandro.thon.j@gmail.com
 
+### Alejandro Thon
+
+- Linkedin - [Linkedin - Alejandro Thon](www.linkedin.com/in/alejandrothon/)
+- Email - alejandro.thon.j@gmail.com

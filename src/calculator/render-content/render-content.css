@@ -7,15 +7,14 @@
 .content__wrapper {
   display: flex;
   text-align: center;
+  gap: 1rem;
 }
 .content__span {
   font-size: 5rem;
   color: var(--purple);
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   font-weight: 800;
   font-style: italic;
-  overflow: hidden;
-  max-height: 5rem;
 }
 
 .content__text {
@@ -38,5 +37,9 @@
   .content__span,
   .content__text {
     font-size: 3.2rem;
+  }
+  .content__span {
+    overflow: hidden;
+    max-height: 5rem;
   }
 }
