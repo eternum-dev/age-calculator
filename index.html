@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="src/public/favicon-32x32.png" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>age calculator</title>
+  </head>
+  <body>
+    <div id="app">
+      <!--  card -->
+      <main class="main">
+        <form class="form">
+          <div class="form__container">
+            <div class="form__input-wrapper">
+              <label class="form__lbl"> day</label>
+              <input
+                type="text"
+                class="form__imput"
+                placeholder="DD"
+                name="day"
+              />
+            </div>
+
+            <div class="form__input-wrapper">
+              <label class="form__lbl"> Month</label>
+              <input
+                type="text"
+                class="form__imput"
+                placeholder="MM"
+                name="month"
+              />
+            </div>
+
+            <div class="form__input-wrapper">
+              <label class="form__lbl"> Year</label>
+              <input
+                type="text"
+                class="form__imput"
+                placeholder="YYYY"
+                name="year"
+              />
+            </div>
+          </div>
+          <div class="form__container-button">
+            <div class="form__hr"></div>
+            <button type="submit" class="form__button">
+              <img src="/src/assets/icons/icon-arrow.svg" alt="arrow" />
+            </button>
+          </div>
+        </form>
+
+        <!-- content js -->
+        <div class="content"></div>
+      </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --lightred: hsl(0, 100%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --offwhite: hsl(0, 0%, 94%);
+  --lightgrey: hsl(0, 0%, 86%);
+  --smokeygrey: hsl(0, 1%, 44%);
+  --offblack: hsl(0, 0%, 8%);
+}
+html {
+  min-height: 300px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  border: 0px;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--offwhite);
+  display: grid;
+  place-content: center;
+  padding:  1rem;
+}
+
+.main {
+  width: 60vw;
+  max-width: 50rem;
+  display: grid;
+  border-radius: 2rem 2rem 30% 2rem;
+  background-color: var(--White);
+  padding: 3rem;
+}
+
+.form {
+  display: grid;
+}
+
+.form__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 30rem;
+}
+
+.form__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 7rem;
+}
+
+.form__lbl {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--smokeygrey);
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.form__lbl--danger {
+  color: var(--lightred);
+}
+
+.form__imput {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  height: 4rem;
+  max-width: 8rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--lightgrey);
+}
+
+.form__imput:focus {
+  border: 1px solid var(--purple);
+  cursor: pointer;
+}
+.form__input--danger {
+  border: 1px solid var(--lightred);
+}
+
+.errorMessage {
+  font-size: 0.9rem;
+  color: var(--lightred);
+  font-weight: 400;
+}
+.form__container-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  height: 5rem;
+  position: relative;
+  margin: 1.5rem 0;
+}
+
+.form__hr {
+  background-color: var(--offwhite);
+  height: 1px;
+  width: 100%;
+}
+
+.form__button {
+  width: 6rem;
+  height: 6rem;
+  background-color: var(--purple);
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+}
+.form__button:active {
+  background-color: var(--offblack);
+}
+
+@media only screen and (max-width: 57rem) {
+  .main {
+    width: 100%;
+    padding: 2rem;
+  }
+  .form__button {
+    right: calc(50% - 3rem);
+  }
+  .form__imput {
+    font-size: 1.2rem;
+  }
+  .form__lbl {
+    font-size: 0.7rem;
+  }
+  .form__container {
+    gap: 1rem;
+  }
+  .form__button {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media only screen and (max-width: 27rem) {
+  .main {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .form__imput {
+    font-size: 1rem;
+  }
+}
